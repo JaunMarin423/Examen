@@ -1,0 +1,181 @@
+.center1 {
+  background-color: #FF6F3C;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  /* IMPORTANTE */
+  text-align: center;
+}
+
+.center2 {
+  background-color: #155263;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  /* IMPORTANTE */
+  text-align: center;
+}
+
+.center3 {
+  background-color: #FF9A3C;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  /* IMPORTANTE */
+  text-align: center;
+}
+
+.contenedor{
+      background-color: #155263;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  /* IMPORTANTE */
+  text-align: center;
+}
+
+/* Estilo de barra de busqueda */
+.flexbuscar--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+	position: static;
+}
+	
+.flexbuscar--form {
+	overflow: hidden;
+	position: relative;
+}
+	
+.flexbuscar--input-wrapper {
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.flexbuscar--input {
+  width: 100%;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+.flexbuscar {
+  padding: 0 25px 0 200px; /* Padding for other horizontal elements */
+}
+
+.flexbuscar--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+ 	height: 60px;
+  padding: 0 46px 0 10px;
+	border-color: #888;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: solid;
+	border-width: 5px;
+  margin-top: 15px;
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+	font-size: 26px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+	
+.flexbuscar--submit {
+  position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+  padding: 0;
+  border: none;
+	margin-top: 20px; /* margin-top + border-width */
+  margin-right: 5px; /* border-width */
+	background: transparent;
+  color: #888;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.flexbuscar--input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.flexbuscar--input:focus.flexbuscar--submit {
+ 	color: #333; 
+}
+
+.flexbuscar--submit:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+input:-moz-placeholder {
+  color: #888
+}
+
+
+/****************
+ * Pretify demo *
+ ****************/
+.h1 {
+  float: left;
+  margin: 25px;
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 45px;
+  text-align: center;
+}
+
+  .boton_2{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #FFC93C;
+    border-radius: 6px;
+    border: 2px solid #FFC93C;
+  }
+  .boton_2:hover{
+    color: #FFC93C;
+    background-color: #ffffff;
+  }
+
+  #bgventana{
+      position: fixed;
+      background: rgba(0,0,0,0.7);
+      opacity: 1.7;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: 1;
+      visibility: hidden;
+      
+  }
+
+  #ventana{
+      position: absolute;
+      background-color: #155263;
+      border: solid #155263 10px;
+      width: 500px; 
+      height: 400px;
+      top: 50%;
+      left:50%;
+      margin-top: -200px;
+      margin-left: -250px;
+
+  }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda CRUD</title>
+  <link rel="stylesheet" type"text/css" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="center2">    
+        <div class="center1">
+            <div class="center3">
+                <div class="flexbuscar">
+                    <div class="flexbuscar--wrapper">
+                        <form class="flexbuscar--form" action="#" method="post">
+                             <div class="flexbuscar--input-wrapper">
+                                    <input class="flexbuscar--input" type="buscar" placeholder="Buscar">
+                            </div>
+                            <input class="flexbuscar--submit" type="submit" value="&#10140;"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor">
+
+            <div class="center1">
+                <table>
+                    <tr>
+                        <th>Nombre: </th>
+                    </tr>
+                        <tbody id="nombre">
+                        </tbody>
+                          <tr>
+                        <th>Telefono: </th>
+                    </tr>
+                        <tbody id="telefono">
+                        </tbody>
+                          <tr>
+                        <th>Direccion:  </th>
+                    </tr>
+                        <tbody id="direccion">
+                        </tbody>
+                    </table>
+
+            </div>
+                
+            </div>
+        </div>
+        <div id="bgventana" calss="ventana">
+    
+                <div id="ventana">
+
+                    <div ng-show="formVisibility" class="" id="Persona_nueva">
+                        <button onclick="desplegar('hidden')" class="boton_2">cerrar</button>
+                        <center><h2>Añadir un Contacto</h2>
+                            <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+                            Nombre: <input type="text" id="add-name" placeholder="New name" ng-model="nuevaPersona.nombre"></input>
+                            <br>
+                            <br>
+                            Telefono: <input type="text" id="add-telefono" placeholder="New telefono" ng-model="nuevaPersona.telefono"></input>
+                            <br>
+                            <br>
+                            Direccion: <input type="text" id="add-direccion" placeholder="New dire" ng-model="nuevaPersona.direccion"></input>
+                            <br>
+                            <br>
+                            <!--<button ng-click="Save()" class="boton_2">Guardar</button>-->
+                            </div>
+
+                            <input type="submit" value="Add" class="boton_2">
+                            </form>
+                        </center>
+
+                    </div>
+        
+                 </div>
+        <script>
+            function desplegar(_valor){
+                document.getElementById("bgventana").style.visibility=_valor;
+            }
+
+        </script>
+    <button onclick="desplegar('visible')" class="boton_2">Nuevo</button>
+        </div>
+
+<!--Llamar otras paginas -->
+<script src= "script.js" type="text/javascript"></script>
+
+</body>
